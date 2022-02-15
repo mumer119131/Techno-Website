@@ -8,10 +8,12 @@
     <title>Phone</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="only_logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <div class="main phone_bg">
+    <div id="wrapper">
+    <div class="main phone_bg" id="main">
         <nav>
             <div class="logo">
                 <img src="logo.png" alt="logo">
@@ -27,10 +29,11 @@
         </nav>
     <div id="content">
         <div id="picture">
-            <img src="mobile.png" alt="mobile photo" class="phone" id="phone">
+            <img src="mobile5.png" alt="mobile photo" class="phone" id="phone">
         </div>
         <div id="features">
-            <h1>TECHNO CAMON <span style="color: #eb3741;">7 PRO</span></h1>
+            <h1 id="first-name">TECHNO CAMON</h1><h3 id="second-name" style="color: #eb3741; display: inline-block;">7 PRO</h3>
+            <span id="second-name"></span>
             <ul>
                 <li id="processor">Snap Dragon 888</li>
                 <li id="android">Android 11, HIOS 7.5</li>
@@ -41,18 +44,358 @@
                 <li id="m-board">Mali-G52 MC2</li>
                 <li><span style="color: #eb3741; font-size: 30px; margin-top: 50px;"><span style="font-size: 20px;"><strike id="total-price">120$</strike></span><b id="disc-price"> 99$</b> </span><span style="margin-bottom: 2px;"> ( 20% off )</span></li>
             </ul>
+            <button class="buy_btn" id="buy">BUY</button>
         </div>
         
     </div>
+
     <div class="center" style="margin-top: 30px;">
         <img src="left.png" alt="" class="nav_buttons" id="left" >
         <img src="right.png" alt="" class="nav_buttons" id="right">
     </div>
+    </div>
+    <div class="popup-msg" id="popup-msg">
 
-
-    
-
+        <i class="fas fa-times" id="close-pop"></i>
+        <lottie-player src="10470-confirm.json" id="trans-anim" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        <div>
+            <h2 id="trans-money">99$</h2>
+            <h3>Transaction Successful!</h3>
+        </div>
+    </div>
 </div>
+<div class="phone-store-container">
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m7.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+    
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m2.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m3.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m4.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m5.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/camon-18T.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+</div>
+
+<div class="phone-store-container">
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m7.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m2.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m3.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m4.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m5.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/camon-18T.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+</div>
+
+<div class="phone-store-container">
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m7.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m2.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m3.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m4.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/m5.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+
+    <div class="phone-store-wrapper">
+        <img src="/img/phones/camon-18T.png" alt="phone">
+        <img src="/img/stars.png" alt="">
+        <h3>Techno Smart Pro</h3>
+        <h2>59$</h2>
+        <ul>
+            <li>Snap Dragon 888</li>
+            <li>Android 11, HIOS 7.5</li>
+            <li>IPS LCD, 90Hz</li>
+            <li>48 MP, PDAF</li>
+            <li>1080p@30fps</li>
+            <li>Mali-G52 MC2</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<div class="footer">
+    <div class="mobiles">
+        <ul>
+            <li class="title">Lastest Releases</li>
+            <li>Techno Spark 4</li>
+            <li>Techno Spark Go</li>
+            <li>Techno Infinity</li>
+            <li>Techno Meta</li>
+            <li>Techno Go</li>
+            <li>Techno Honor 4</li>
+            <li>Techno Oster 5</li>
+            <li>Techno Master</li>
+            <li>Techno Hammer 2</li>
+            <li>Techno Aims 4</li>
+        </ul>
+    </div>
+
+    <div class="mobiles">
+        <ul>
+            <li class="title">Lastest Apps</li>
+            <li>Safe Clean</li>
+            <li>Clean Master</li>
+            <li>Micro Controller</li>
+            <li>Data Master</li>
+            <li class="title">Redirect</li>
+            <li><a href="home.html" target="blank">Home</a></li>
+            <li><a href="phone.html" target="blank">Phone</a></li>
+            <li><a href="login.html" target="blank">Login</a></li>
+            <li><a href="Signup.html" target="blank">Signup</a></li>
+        </ul>
+    </div>
+
+    <div class="mobiles">
+        <ul>
+            <li class="title">Contact Us</h2>
+            <li>Phone : 0345-6013122</li>
+            <li>Email : mumer119131@gmail.com</li>
+            <li>Fax : 041-654578</li>
+            <li>Telephone : 041-454545</li>
+            <li>Office Address : University Of Agriculture Faisalabad,Main Jail Road,Fasilabad</li>
+        </ul>
+        <h2>Social Accounts</h2>
+        <div class="social-accounts">
+            <img src="/img/partners/facebook.png" alt="Facebook">
+            <img src="/img/social/twitter.png" alt="Twitter">
+            <img src="/img/social/instagram.png" alt="Instagram">
+            <img src="/img/social/whatsapp.png" alt="WhatsApp">
+        </div>
+    </div>
+</div>
+
 </body>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="script.js"></script>    
+<script src="lottie.js"></script>
 </html>

@@ -8,38 +8,103 @@
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="only_logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <div class="main">
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="logo">
-            </div>
-            <div class="nav-links">
-                <ul>
+    <div id="wrapper">
+        <div class="main" id="main">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+                <div class="nav-links">
+                    <ul>
                     <li><a href="home.html" style="color: #444447; ">Home</a></li>
                     <li><a href="phone.html" style="color: #444447;">Phone</a></li>
                     <li><a href="login.html" style="color: red; border: 1px red solid; border-top: transparent;border-left: transparent; border-right: transparent;">Login</a></li>
                     <li><a href="Signup.html" style="color: #444447;">SignUp</a></li>
                 </ul>
+
             </div>
         </nav>
         <div style="margin-top: 5%;">
             <div class="center" style="text-align: center;">
                 <h1 style="color: #eb3741;">Login</h1>
                 <p style="margin-bottom: 30px; margin-top: 10px;">Enter the required fields.</p>
-                <form action="">
+                <!-- <form>  -->
                     <input type="text" class="" placeholder="Email">
                     <input type="password" class="" placeholder="Password"><br>
                     <input type="checkbox" name="agreement" style="margin-top: 10px; margin-right: 5px;">
                     <label for="agreement">Remember Password</label><br>
-                    <button class="button">Login</button>
-
-                </form>
-                <p style="margin-top: 10px;">Didn't have an account? <span style="color: rgb(2, 72, 151);"><a href="Signup.html">SignUp</a></span></p>
+                    <button class="button" id="login-pop"">Login</button>
+                    
+                <!-- </form> -->
+                <p style="margin-top: 10px; color: #444447;">Didn't have an account? <span style="color: rgb(2, 72, 151);"><a href="Signup.html">SignUp</a></span></p>
             </div>
         </div>
     </div>
+    <div class="popup-msg" id="popup-msg-login">
+        <i class="fas fa-times" id="close-pop"></i>
+        <lottie-player src="78126-secure-login.json" id="trans-anim" background="transparent" speed="1"
+            style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        <h3>Login <br>Successful</h3>
+      
+    </div>
+</div>
+<div class="footer">
+    <div class="mobiles">
+        <ul>
+            <li class="title">Lastest Releases</li>
+            <li>Techno Spark 4</li>
+            <li>Techno Spark Go</li>
+            <li>Techno Infinity</li>
+            <li>Techno Meta</li>
+            <li>Techno Go</li>
+            <li>Techno Honor 4</li>
+            <li>Techno Oster 5</li>
+            <li>Techno Master</li>
+            <li>Techno Hammer 2</li>
+            <li>Techno Aims 4</li>
+        </ul>
+    </div>
 
-</body>        
+    <div class="mobiles">
+        <ul>
+            <li class="title">Lastest Apps</li>
+            <li>Safe Clean</li>
+            <li>Clean Master</li>
+            <li>Micro Controller</li>
+            <li>Data Master</li>
+            <li class="title">Redirect</li>
+            <li><a href="home.html" target="blank">Home</a></li>
+            <li><a href="phone.html" target="blank">Phone</a></li>
+            <li><a href="login.html" target="blank">Login</a></li>
+            <li><a href="Signup.html" target="blank">Signup</a></li>
+        </ul>
+    </div>
+
+    <div class="mobiles">
+        <ul>
+            <li class="title">Contact Us</h2>
+            <li>Phone : 0345-6013122</li>
+            <li>Email : mumer119131@gmail.com</li>
+            <li>Fax : 041-654578</li>
+            <li>Telephone : 041-454545</li>
+            <li>Office Address : University Of Agriculture Faisalabad,Main Jail Road,Fasilabad</li>
+        </ul>
+        <h2>Social Accounts</h2>
+        <div class="social-accounts">
+            <img src="/img/partners/facebook.png" alt="Facebook">
+            <img src="/img/social/twitter.png" alt="Twitter">
+            <img src="/img/social/instagram.png" alt="Instagram">
+            <img src="/img/social/whatsapp.png" alt="WhatsApp">
+        </div>
+    </div>
+</div>
+
+<script src="login_script.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="lottie.js"></script>
+</body>     
+</html>   

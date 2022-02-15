@@ -22,7 +22,7 @@ section {
   width: 100%;
   height: 100%;
   padding: 2em 1.5em;
-  background: linear-gradient(#ffffff 50%, #e01c1c 50%);
+  background: linear-gradient(#ffffff 50%, #eb3741 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
   border-radius: 5px;
@@ -43,7 +43,7 @@ section {
   letter-spacing: 0.03em;
 }
 .icon-wrapper {
-  background-color: #e01c1c;
+  background-color: #eb3741;
   position: relative;
   margin: auto;
   font-size: 30px;
@@ -61,7 +61,7 @@ section {
 
 .card:hover .icon-wrapper {
   background-color: white;
-  color: #e01c1c;
+  color: #eb3741;
 }
 
 .card:hover h3 {
@@ -181,6 +181,207 @@ nav {
   }
 }
 
+.employees_wrapper {
+  padding: 0 10% 10% 10%;
+}
+.employee {
+  margin-top: 20px;
+  background-color: #eb3741;
+  width: 100%;
+  height: 250px;
+  padding: 0.5em 2em 0.5em 2em;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  min-width: 428px;
+  box-shadow: 0 10px 10px rgba(156, 154, 154, 0.637);
+  cursor: pointer;
+}
+.employee:hover {
+  width: 110%;
+  height: 270px;
+  background-color: rgb(228, 31, 31);
+  transform: translateX(-5%);
+}
+.employee_image {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  padding: 1em;
+  display: inline-block;
+}
+.employee_image img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  box-shadow: 10px 0px 10px rgb(228, 30, 23);
+  object-fit: cover;
+}
+.emloyee_desc {
+  padding: 1em;
+  position: relative;
+}
+.emloyee_desc h2 {
+  font-family: squid-font;
+  overflow: hidden;
+  letter-spacing: 3px;
+}
+.emloyee_desc h2,
+h3,
+p {
+  color: white;
+}
+@font-face {
+  font-family: squid-font;
+  src: url("fonts/squid.ttf");
+}
+.review_wrapper {
+  height: auto;
+  width: 100%;
+  background-color: #eb3741;
+  text-align: center;
+  padding: 50px;
+}
+.review-container {
+  height: auto;
+  width: auto;
+  border-radius: 8px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0 10px 10px rgba(131, 131, 131, 0.12);
+  padding: 1em;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.round-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(156, 154, 154, 0.637);
+}
+.review-container h2 {
+  color: rgb(71, 70, 70);
+  font-family: squid-font;
+  letter-spacing: 5px;
+}
+.review-container h2:nth-child(1) {
+  font-size: xxx-large;
+}
+.review-container p {
+  color: rgb(71, 70, 70);
+  padding: 20px;
+}
+.contents {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  width: 100%;
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  background-color: #f2efef;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.content img {
+  object-fit: cover;
+}
+.content:hover {
+  transform: translateY(-10px);
+  background-color: #ccc;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.partners {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.partners h2 {
+  font-family: "squid-font";
+  text-align: center;
+  margin-top: 20px;
+  font-size: xxx-large;
+  color: #444447;
+}
+.partner-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.partner-container h2 {
+  font-family: "squid-font";
+  text-align: center;
+}
+.partner-container img {
+  width: 250px;
+  margin-right: 30px;
+}
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #262627;
+  display: flex;
+}
+.mobiles {
+  /* border: 1px white solid; */
+  height: auto;
+  color: #ccc;
+  padding: 50px;
+}
+.mobiles ul {
+  list-style: none;
+  text-align: center;
+}
+.mobiles h2 {
+  text-align: center;
+  font-family: "squid-font";
+  font-size: x-large;
+  margin-top: 20px;
+}
+.title {
+  font-size: x-large;
+  font-family: "squid-font";
+  font-weight: 400;
+}
+.mobiles li {
+  margin: 15px 0 0 0;
+  cursor: pointer;
+}
+.mobiles a {
+  color: #ccc;
+  text-decoration: none;
+}
+.mobiles li:hover {
+  text-decoration: underline;
+}
+.mobiles:nth-child(1) {
+  flex-basis: 25%;
+}
+.mobiles:nth-child(2) {
+  flex-basis: 25%;
+}
+.mobiles:nth-child(3) {
+  flex-basis: 50%;
+}
+.social-accounts {
+  display: flex;
+  justify-content: center;
+}
+.social-accounts img {
+  margin-top: 20px;
+  margin-right: 30px;
+  width: 40px;
+  cursor: pointer;
+}
+
 /* phone_page_css_start */
 
 .phone_bg {
@@ -194,6 +395,8 @@ nav {
   align-items: center;
   cursor: pointer;
   transition: 0.5s;
+  position: relative;
+  animation: 0.7s phone_anim linear;
 }
 
 #content {
@@ -207,7 +410,8 @@ nav {
   margin: 10px auto;
   overflow: auto;
 }
-#picture img {
+
+.animatePic {
   animation: 0.7s phone_anim linear;
 }
 
@@ -270,6 +474,79 @@ nav {
   cursor: pointer;
 }
 
+.buy_btn {
+  background-color: #eb3741;
+  width: 400px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* .buy_btn:hover {
+  background-color: white;
+  border: 3px solid #eb3741;
+  color: #eb3741;
+} */
+.popup-msg {
+  width: 650px;
+  height: 340px;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgb(168, 167, 167);
+  padding: 20px;
+  text-align: center;
+  visibility: collapse;
+  animation: openup linear 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-msg i {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  color: rgb(228, 30, 23);
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+}
+
+.popup-msg h3 {
+  color: #444447;
+  font-size: x-large;
+  font-family: "squid-font";
+}
+.popup-msg h2 {
+  color: #e01c1c;
+  font-size: xxx-large;
+  position: relative;
+}
+
+.pop_anim {
+  animation: 0.5s linear openup;
+}
+@keyframes openup {
+  0% {
+    width: 400px;
+  }
+  100% {
+    width: 650px;
+  }
+}
+
 /* login_css_starting_from_here */
 
 input[type="text"],
@@ -309,4 +586,50 @@ input[type="submit"] {
   margin: 4px 2px;
   cursor: pointer;
   margin-top: 20px;
+}
+.phone-store-container {
+  height: auto;
+  padding: 20px;
+  display: flex;
+}
+.phone-store-wrapper {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: rgb(236, 236, 236);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 20px;
+  flex-basis: 100%;
+  cursor: pointer;
+}
+.phone-store-wrapper:hover {
+  padding-right: 40px;
+  padding-left: 40px;
+  transform: translateY(-10px);
+  background-color: #ccc;
+}
+.phone-store-wrapper ul {
+  list-style: none;
+}
+.phone-store-wrapper li {
+  margin-top: 10px;
+}
+.phone-store-wrapper img {
+  width: 170px;
+}
+.phone-store-wrapper img:nth-child(2) {
+  margin: 10px 0 10px 0;
+  width: 100px;
+}
+.phone-store-wrapper h3 {
+  color: #444447;
+}
+.phone-store-wrapper h2 {
+  color: rgb(182, 7, 7);
 }
